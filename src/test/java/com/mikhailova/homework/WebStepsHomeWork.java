@@ -30,11 +30,10 @@ public class WebStepsHomeWork {
 
     @Step("Открываем разедел Issues")
     public void openIssueTab() {
-        $(partialLinkText("Issues")).click();
-    }
+        $(partialLinkText("Issues")).click();}
 
-    @Step("Проверяем наличие Issue с номером {number}")
-    public void shouldSeeIssueWithNumber(int number) {
-        $(byText("#" + number)).should(Condition.visible);
+    @Step("Проверяем наличие Issue с именем {name}")
+    public void shouldSeeIssueWithName(String name) {
+        $(byText(name)).should(Condition.visible);
     }
 }

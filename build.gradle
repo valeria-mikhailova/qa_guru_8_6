@@ -13,6 +13,7 @@ repositories {
 allure {
     version = "2.15.0"
     autoconfigure = true
+    aspectjVersion = "1.9.6"
 
     useJUnit5 {
         version = "2.15.0"
